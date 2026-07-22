@@ -1,0 +1,14 @@
+---
+# Common Hiera data — sane defaults; override per node/OS as needed.
+profile::base::timezone: 'UTC'
+profile::base::motd_template: |
+  Managed by Puppet — changes made by hand will be reverted.
+  Node: %{trusted.certname} (%{facts.os.name} %{facts.os.release.full})
+
+# profile::users — describe admin accounts here (or per-node). Example:
+profile::users::accounts: {}
+#   alice:
+#     comment: 'Alice Admin'
+#     groups: ['sudo']
+#     sshkeys:
+#       - 'ssh-ed25519 AAAA... alice@laptop'

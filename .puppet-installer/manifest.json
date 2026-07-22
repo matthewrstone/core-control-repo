@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "files": {
+    ".gitignore": "d31fcc0f44c6466c6a82d3e0a54cbd4a879ee350eebd7e50697de86590585531",
+    "Puppetfile": "f59007348cdf933283960b4a739800cb8ba973f58cd7c4dff77a2da93c72945f",
+    "README.md": "f433fb50cb48aaee0ee1c3efbb9c38759b216a3507ccab0afe51485119954929",
+    "data/common.yaml": "22616a44531e678e2ed99fe78f4ace3fa290833f4caee8a4d64ad0e6de123bbc",
+    "data/nodes/README.md": "065230ac76d07d299f3b19bef9f73152197678322df8212b45e46f1a9e179ebf",
+    "environment.conf": "6eebaf60d5d79acc4f130a9d2c7979f6e23e1a2c9a4f87260adc99a4e745e866",
+    "hiera.yaml": "3f57295aeccc4ee735a41513e68c7c21ab6afcdebe28652350473a0eaaf5cf06",
+    "manifests/site.pp": "a4c785bd5a0f3342c6ec04377d11635667954defb4ad5c77a0593d15bbd58f05",
+    "site-modules/profile/manifests/base.pp": "2ba4e2bb61eee34212b23a764af1d60bd6709cd35fdb4ba4948f24679608eb4a",
+    "site-modules/profile/manifests/compliance.pp": "9aec94b733bf27df0a7720d3d32ff944fc7fde929740ad979f5b6c7bc0573f09",
+    "site-modules/profile/manifests/docker_host.pp": "893e6d1660de9ab779071d072c9ef0d1154c14d4fb78d035feb1284e66a981f1",
+    "site-modules/profile/manifests/lamp.pp": "9d9c16053b5c4056ecabebe6f53f0813190193401687ec46e93ce955e6ebae54",
+    "site-modules/profile/manifests/security.pp": "aa485017906da41be4e4aaceaeaae7e015636a60a453b958d661069537d9cdca",
+    "site-modules/profile/manifests/users.pp": "968be42b2b39a5e6d62ba69b1297195ff9516a03c4789ed54b21c708f979a3c5",
+    "site-modules/profile/manifests/windows_base.pp": "70f4e01839e5f444c70e8acb6b9ac79c529af9447552a3fa2563ab6a9cfbfac1",
+    "site-modules/role/manifests/base_server.pp": "460d357fa66d092e42b9a001a1dfeaa426b42dd1240e88aa11d624afbec15df8",
+    "site-modules/role/manifests/docker_host.pp": "765d23e5db226ef9ad7dde0e7d1260e6ad6742d967eb3432f2f98cd7d9974be4",
+    "site-modules/role/manifests/hardened_server.pp": "4a5e84158e1b924362b85024a8c6933f034f72c59a28b6c9147f20dedb609b40",
+    "site-modules/role/manifests/lamp_server.pp": "3b04dbbcb8a8825b27447092f8987090d25654939a48ed204dc3208743f98d29",
+    "site-modules/role/manifests/windows_server.pp": "4acd2af38d022ba66a69b78ed00f0d985131283b06c9aba741bd8319d1c3ceb7"
+  }
+}

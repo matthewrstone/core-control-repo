@@ -1,0 +1,24 @@
+---
+# Hiera hierarchy for this control repo. The eyaml layer matches the
+# batteries-included keys the installer provisions at
+# /etc/puppetlabs/puppet/eyaml/ — 'eyaml encrypt -s <secret>' output pastes
+# straight into the *.eyaml files.
+version: 5
+defaults:
+  datadir: data
+  data_hash: yaml_data
+hierarchy:
+  - name: "Per-node secrets (eyaml)"
+    lookup_key: eyaml_lookup_key
+    paths:
+      - "nodes/%{trusted.certname}.eyaml"
+      - "common.eyaml"
+    options:
+      pkcs7_private_key: /etc/puppetlabs/puppet/eyaml/private_key.pkcs7.pem
+      pkcs7_public_key: /etc/puppetlabs/puppet/eyaml/public_key.pkcs7.pem
+  - name: "Per-node data"
+    path: "nodes/%{trusted.certname}.yaml"
+  - name: "Per-OS-family data"
+    path: "os/%{facts.os.family}.yaml"
+  - name: "Common data"
+    path: "common.yaml"
